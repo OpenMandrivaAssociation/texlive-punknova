@@ -60,6 +60,7 @@ a variant for each invocation.
 %doc %{_texmfdistdir}/doc/fonts/punknova/source/punkfont-slanted.mp
 %doc %{_texmfdistdir}/doc/fonts/punknova/source/punkfont.mp
 %doc %{_texmfdistdir}/doc/fonts/punknova/tools/build.py
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -70,3 +71,5 @@ a variant for each invocation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
