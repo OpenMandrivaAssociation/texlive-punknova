@@ -26,16 +26,8 @@ OpenType font; rather, the font contains several variants of
 each glyph, and uses the OpenType randomize function to select
 a variant for each invocation.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -58,7 +50,6 @@ a variant for each invocation.
 %doc %{_texmfdistdir}/doc/fonts/punknova/source/punkfont-regular.mp
 %doc %{_texmfdistdir}/doc/fonts/punknova/source/punkfont-slanted.mp
 %doc %{_texmfdistdir}/doc/fonts/punknova/tools/build.py
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -69,5 +60,3 @@ a variant for each invocation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
