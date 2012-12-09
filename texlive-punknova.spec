@@ -60,3 +60,21 @@ a variant for each invocation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.003-2
++ Revision: 755527
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.003-1
++ Revision: 739873
+- texlive-punknova
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.002-1
++ Revision: 719414
+- texlive-punknova
+- texlive-punknova
+- texlive-punknova
+- texlive-punknova
+
