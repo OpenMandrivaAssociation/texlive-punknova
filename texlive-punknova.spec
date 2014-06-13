@@ -6,7 +6,7 @@
 # catalog-version 1.003
 Name:		texlive-punknova
 Version:	1.003
-Release:	6
+Release:	7
 Summary:	OpenType version of Knuth's Punk font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/punknova
