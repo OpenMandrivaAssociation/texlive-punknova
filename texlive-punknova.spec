@@ -1,6 +1,6 @@
 Name:		texlive-punknova
 Version:	24649
-Release:	1
+Release:	2
 Summary:	OpenType version of Knuth's Punk font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/punknova
