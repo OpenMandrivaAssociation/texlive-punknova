@@ -3,7 +3,7 @@ Version:	24649
 Release:	2
 Summary:	OpenType version of Knuth's Punk font
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/punknova
+URL:		https://www.ctan.org/tex-archive/fonts/punknova
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/punknova.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/punknova.doc.r%{version}.tar.xz
